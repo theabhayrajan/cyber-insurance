@@ -111,7 +111,7 @@ export default function HowItWorks() {
         ref={headingRef}
         className="text-4xl font-bold mb-10"
       >
-        How are you
+        How it works
       </h2>
 
       <div className="flex flex-wrap w-[280px] justify-center gap-15 md:w-[780px] xl:max-w-8xl xl:w-auto">
