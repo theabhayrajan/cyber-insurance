@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowRight } from "lucide-react";
 
-export default function ButtonSection({text="Get in touch", bgColor = "black"}) {
+export default function ButtonSection({text="Get in touch", bgColor = "#854bfa"}) {
   const btnRef = useRef(null);
   const textRef = useRef(null);
   const altTextRef = useRef(null);
@@ -63,7 +63,7 @@ export default function ButtonSection({text="Get in touch", bgColor = "black"}) 
     <div className="h-20 relative w-full flex items-center justify-center">
       <button
         ref={btnRef}
-        className="relative overflow-hidden text-black font-medium px-6 py-2 md:px-7 rounded-full h-17 md:h-16 flex items-center justify-center"
+        className="relative overflow-hidden text-white font-medium px-6 py-2 md:px-7 rounded-full h-17 md:h-16 flex items-center justify-center"
         style={{ backgroundColor: bgColor }}
       >
       
