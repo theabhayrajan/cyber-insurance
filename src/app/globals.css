@@ -53,7 +53,7 @@
 /* Apply globally */
 body {
    font-family:  Cambon, Theinhardt, Arial, Helvetica, sans-serif !important;
-  background-color: white;
+  /* background-color: white; */
   overflow-x: hidden;
 }
 

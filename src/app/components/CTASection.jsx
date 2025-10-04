@@ -72,11 +72,11 @@ export default function CtaSection() {
                     </p>
 
                     {/* Button */}
-                    {/* <div className="flex flex-col justify-self-center gap-3 whitespace-nowrap sm:flex-row justify-center mt-5  lg:mt-5 2xl:mt-7">
-                        <ButtonSection text="Create my Cyber Insurability Report " />
-                        <ButtonSection text="Continue from where i left off"/>
+                    <div className="flex flex-col justify-self-center gap-3 whitespace-nowrap sm:flex-row justify-center mt-5  lg:mt-5 2xl:mt-7">
+                        <ButtonSection text="Create my Cyber Insurability Report" bgColor="white" txtColor="black" />
+                        <ButtonSection text="Continue from where i left off" bgColor="white" txtColor="black"/>
 
-                    </div> */}
+                    </div>
                 </div>
             </div>
 

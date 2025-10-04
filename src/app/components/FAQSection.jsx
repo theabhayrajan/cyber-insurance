@@ -77,8 +77,8 @@ export default function FAQSection() {
               key={index}
               className={`border border-black rounded overflow-hidden transition-all duration-500 ease-in-out ${
                 isOpen
-                  ? "bg-gradient-to-r from-[#001a44] to-[#00b383] text-white shadow-lg"
-                  : "bg-white text-black hover:bg-gradient-to-r hover:from-[#001a44] hover:to-[#00b383] hover:text-white hover:shadow-md"
+                  ? " bg-black dark:bg-white dark:text-black dark:border-white text-white shadow-lg"
+                  : "bg-white dark:bg-black dark:text-white dark:border-white text-black hover:bg-black hover:text-white hover:shadow-md"
               }`}
             >
               <button
@@ -113,7 +113,7 @@ export default function FAQSection() {
                     : '0px'
                 }}
               >
-                <div className={`px-11 py-4 text-sm bg-white text-black transform transition-all duration-500 ${
+                <div className={`px-11 py-4 text-sm bg-white dark:bg-black dark:text-white text-black transform transition-all duration-500 ${
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
                 }`}>
                   {item.answer}
@@ -128,7 +128,7 @@ export default function FAQSection() {
         <div className="mt-6 text-center">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-[#001a44] text-white px-10 py-2 rounded transition-all duration-300 hover:bg-[#003366] hover:scale-105"
+            className="bg-black dark:bg-white dark:text-black text-white px-10 py-2 rounded transition-all duration-300 hover:bg-black hover:scale-105"
           >
             More ▼
           </button>

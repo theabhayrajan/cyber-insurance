@@ -60,7 +60,7 @@ const Thirdpage = () => {
   ];
  
   return (
-    <div className="bg- py-10 px-4 sm:px-8 md:px-12">
+    <div className="bg-white dark:bg-black py-10 px-4 sm:px-8 md:px-12">
       {/* Heading */}
       <div className="text-center">
         <h1 className="text-xl sm:text-2xl md:text-[1.2rem] pt-3 lg:text-[2.7rem]">
@@ -86,7 +86,7 @@ const Thirdpage = () => {
         <div
           key={index}
           className={`group flex flex-col items-center text-center p-5 border
-            bg-black text-white rounded-xl w-full max-w-sm lg:h-80  xl:h-77`}
+            bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm lg:h-80  xl:h-77`}
         >
           {/* Icon */}
           <div className="h-20 flex items-center justify-center">

@@ -4,38 +4,38 @@ import Image from "next/image";
 const Rating = () => {
     const cards = [
         {
-
-            title: "A+ Exceptional",
+            rating: "A+",
+            title: "Exceptional",
             text: "You're extremely well-protected, with proactive controls and trained staff. Insurers see you as a top-tier candidate.",
             select: "Best pricing and broadest coverage ",
         },
         {
-
-            title: "A Excellent",
+            rating: "A",
+            title: "Excellent",
             text: "Strong cybersecurity controls and low overall risk. A solid position in the eyes of underwriters.",
             select: "Eligible for preferred premiums",
         },
         {
-
-            title: "A- Very Good",
+            rating: "A-",
+            title: "Very Good",
             text: "You're above average and nearly insurer-ready. A few improvements could unlock better pricing or coverage terms.",
             select: "Likely approved with moderate terms",
         },
         {
-
-            title: "B+ Insurable",
+            rating: "B+",
+            title: "Insurable",
             text: "You're generally in good shape, but minor vulnerabilities may increase costs or limit coverage options.",
             select: "May qualify with standard rates",
         },
         {
-
-            title: "B Acceptable",
+            rating: "B",
+            title: "Acceptable",
             text: "Coverage likely, but underwriters will have concerns. Your security foundation is sound but uneven.",
             select: "Higher premiums or exclusions possible",
         },
         {
-
-            title: "B- At Risk",
+            rating: "B-",
+            title: "At Risk",
             text: "such as You lack key controls insurers require -MFA, secure backups, or endpoint protection.",
             select: "Coverage possible but limited",
         },
@@ -47,7 +47,7 @@ const Rating = () => {
     ];
 
     return (
-        <div className="py-10 px-4 sm:px-8 md:px-12">
+        <div className="bg-white dark:bg-black py-10 px-4 sm:px-8 md:px-12">
             {/* Heading */}
             <div className="text-center">
                 <h1 className="text-xl sm:text-2xl md:text-[1.2rem] pt-3 lg:text-[2.7rem]">
@@ -65,31 +65,31 @@ const Rating = () => {
                         <div
                             key={index}
                             className={`group flex flex-col items-left text-left p-5 border
-            bg-black text-white rounded-xl w-full max-w-sm lg:h-70  xl:h-65`}
+        bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm lg:h-70 xl:h-65
+        ${index === cards.length - 1 ? "md:col-start-2" : ""}`}
                         >
+                            <div className="flex flex-row gap-2">
+                                <h1 className=" text-base lg:text-[1.5rem] xl:text-[2.7rem] mt-3">
+                                    {card.rating}
+                                </h1>
+                                <h3 className=" text-base lg:text-[1.5rem] xl:text-[1.9rem] xl:mt-6 mt-3">
+                                    {card.title}
+                                </h3>
+                            </div>
 
-                            {/* Title */}
-                            <h3 className=" text-base lg:text-[1.5rem] xl:text-[1.9rem] mt-3">{card.title}</h3>
-
-                            {/* Text */}
                             <p className=" text-sm md:text-[1rem] mt-2">{card.text}</p>
+
                             <label className="flex flex-row mt-7 gap-3 items-center cursor-pointer">
-                                {/* Hide the real radio */}
                                 <input type="radio" name="option" className="hidden peer" />
-
-                                {/* Custom circle */}
-                                <span className="w-4 h-4 rounded-full border-2 border-[#ffdba2] flex items-center justify-center peer-checked:bg-[#ffdba2]"></span>
-
-                                {/* Label text */}
-                                <span className="text-[#ffdba2] text-sm md:text-[1rem]">
+                                <span className="w-4 h-4 rounded-full border-2 border-[#ffdba2] dark:border-black flex items-center justify-center peer-checked:bg-[#ffdba2] dark:peer-checked:bg-black"></span>
+                                <span className="text-[#ffdba2] dark:text-black text-sm md:text-[1rem]">
                                     {card.select}
                                 </span>
                             </label>
-
-
                         </div>
                     ))}
                 </div>
+
             </div>
         </div>
     );
