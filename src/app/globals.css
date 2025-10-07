@@ -33,22 +33,6 @@
   animation: marquee 20s linear infinite;
 }
 
-/* hero heaidng  */
-
-@media (min-width:767px) and (max-width: 830px) {
-  .hero-heading {
-    font-size: 3.1rem !important;
-  }
-
-}
-
-@media (min-width:320px) and (max-width: 550px) {
-  .hero-heading {
-    font-size: 2.5rem !important;
-
-  }
-
-}
 
 /* Apply globally */
 body {

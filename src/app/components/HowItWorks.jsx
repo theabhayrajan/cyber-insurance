@@ -15,7 +15,7 @@ const steps = [
   },
   {
     id: "02",
-    title: "(Optional) Upload an existing security assessment",
+    title: "(Optional) Upload existing security assessment",
     desc: "Upload either a Pen Test, CIS Assessment or a Sig Lite Assessment",
     bg: "/Rectangle 147.png",
   },
@@ -40,65 +40,20 @@ export default function HowItWorks() {
 
   useEffect(() => {
     // Animate heading from top on scroll
-    gsap.fromTo(
+    gsap.to(
       headingRef.current,
-      { opacity: 0, y: -50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: headingRef.current,
-          start: "top 90%",
-          toggleActions: "play none none reverse",
-        },
-      }
+      { opacity: 1, y: -50 },
+
     );
 
     // Scroll-triggered animation for cards
     cardsRef.current.forEach((card) => {
-      gsap.fromTo(
+      gsap.to(
         card,
-        { opacity: 0, scale: 0.8 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: card,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
+        { opacity: 1, scale: 1 },
       );
-
-      // Hover scale effect
-      card.addEventListener("mouseenter", () => {
-        gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power3.out" });
-      });
-      card.addEventListener("mouseleave", () => {
-        gsap.to(card, { scale: 1, duration: 0.3, ease: "power3.out" });
-      });
     });
 
-    // Scroll animation for button
-    gsap.fromTo(
-      buttonRef.current,
-      { opacity: 0, scale: 0.5 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: buttonRef.current,
-          start: "top 90%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
   }, []);
 
   return (
@@ -122,31 +77,37 @@ export default function HowItWorks() {
               alt="background shape"
               className="absolute inset-0 w-full h-97 object-cover rounded-4xl -translate-y-3 translate-x-6 -z-10 img-bottom filter brightness-0 dark:brightness-100"
             />
-          
+
 
             <div className="relative overflow-hidden rounded-3xl shadow-md clip-bottom">
-              <div className="bg-white dark:bg-black border border-[#f4f4f4] dark:border-black rounded-2xl p-3 flex flex-col items-center text-center h-[400px] clip-bottom">
-                <div className="bg-black dark:bg-white border border-[#e6e6e6] rounded-2xl shadow-inner p-6 flex flex-col items-center text-center h-full clip-bottom">
+              <div className="bg-white dark:bg-black border border-[#f4f4f4] dark:border-black rounded-2xl p-3 flex flex-col items-center text-center h-[400px] clip-bottom relative">
+                <div className="bg-black dark:bg-white border border-[#e6e6e6] rounded-2xl shadow-inner p-6 flex flex-col items-center text-center h-full clip-bottom relative">
 
-                  <h3 className="lg:text-[1.5rem] leading-7 mb-1 mt-6 text-white dark:text-black">{step.title}</h3>
-                  <p className="text-sm text-white dark:text-black mb-6 mt-5">{step.desc}</p>
+                  <h3 className="lg:text-[1.8rem] leading-7 mb-1 mt-2 text-white dark:text-black">
+                    {step.title}
+                  </h3>
+                  <p className="text-base text-white dark:text-black mb-6 mt-5">
+                    {step.desc}
+                  </p>
+
                   <div
-                    className={`w-14 h-14 flex items-center justify-center rounded-full bg-white dark:bg-black text-black dark:text-white text-2xl font-bold mt-3`}
+                    className="w-14 h-14 flex items-center justify-center rounded-full bg-white dark:bg-black text-black dark:text-white text-2xl font-bold absolute bottom-11 "
                   >
                     {step.id}
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         ))}
       </div>
 
       <button
         ref={buttonRef}
-        className="mt-12 text-xs md:text-base px-8 py-4 rounded-full bg-black dark:bg-white dark:text-black text-white flex items-center gap-2 shadow-lg text-center"
+        className="mt-12 text-xs md:text-base px-4 py-4 rounded-full bg-black dark:bg-white dark:text-black text-white flex items-center gap-2 shadow-lg text-center"
       >
-        Create my Cyber Insurability Report
+        Create My Cyber Insurability Report
       </button>
 
       <style jsx>{`

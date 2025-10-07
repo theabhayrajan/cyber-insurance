@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
- 
+
 const Thirdpage = () => {
   const cards = [
     // {
@@ -58,58 +58,83 @@ const Thirdpage = () => {
       bg: "bg-yellow-50",
     },
   ];
- 
+
   return (
-    <div className="bg-white dark:bg-black py-10 px-4 sm:px-8 md:px-12">
+    <div className="bg-white dark:bg-black py-0 px-4 sm:px-8 md:px-12">
       {/* Heading */}
       <div className="text-center">
-        <h1 className="text-xl sm:text-2xl md:text-[1.2rem] pt-3 lg:text-[2.7rem]">
-          Meet LEXI Rating
+        <h1
+          className="flex items-center justify-center gap-1 text-[1.9rem] sm:text-[1.9rem] md:text-[2.4rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.8rem]"
+        >
+          Meet
+          <span className="inline-flex items-center">
+            <img
+              src="/cyber-insurance-white.svg"
+              alt="LEXI Logo"
+              className="h-6 mt-1 sm:h-6 md:h-7 lg:h-8 xl:h-8 2xl:h-8.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+            />
+            EXI Rating
+          </span>
         </h1>
-        <h2 className="text-lg sm:text-2xl md:text-3xl mt-2 lg:text-[2.1rem] mb-5">
+
+        <h1 className="text-[1.4rem] sm:[1.9rem] md:text-[2rem] mt-2 lg:text-[2.1rem] 2xl:text-[2.5rem] mb-5 leading-7 md:leading-9">
           The Cyber Insurability Rating designed for Small Businesses
-        </h2>
-        <p className="mt-4 sm:text-base md:text-lg lg:text-[1.2rem] font-medium leading-10">
-          LEXI Rating is the world's first cyber insurability rating built
-          specifically for micro and small businesses <br />
+        </h1>
+        <p className="text-[0.8rem] leading-5 sm:text-[1rem] md:text-lg lg:text-[1.2rem] font-medium sm:leading-5 md:leading-7 lg:leading-8 2xl:leading-10 lg:px-5 xl:px-35 2xl:px-67">
+      
+          <span className="">
+            <img
+              src="/cyber-insurance-white.svg"
+              alt="LEXI Logo"
+              className="h-3 mb-0.5 sm:h-3.5 sm:mb-1 md:h-4 lg:h-4 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+            />
+            EXI Rating is the world's first cyber insurability rating built
+          specifically for micro and small businesses.
           It's like a credit rating - but for cyber insurability.
+          </span>
         </p>
-        <p className="mt-7 sm:text-base md:text-lg lg:text-[1.2rem] font-medium">
-       Your LEXI Rating provides you with:
+        <p className="text-[0.9rem] sm:text-[1rem] mt-5 sm:text-base md:text-lg lg:text-[1.2rem] font-medium">
+          Your <span className="">
+            <img
+              src="/cyber-insurance-white.svg"
+              alt="LEXI Logo"
+              className="h-3 mb-0.5 sm:h-3.5 md:h-4 lg:h-4 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+            />EXI Rating provides you with:
+             </span>
         </p>
       </div>
- 
+
       {/* Cards Grid */}
-    <div className="flex justify-center mt-10 items-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 max-w-[1200px] w-full place-items-center">
-      {cards.map((card, index) => (
-        <div
-          key={index}
-          className={`group flex flex-col items-center text-center p-5 border
-            bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm lg:h-80  xl:h-77`}
-        >
-          {/* Icon */}
-          <div className="h-20 flex items-center justify-center">
-            <Image
-              src={card.img}
-              alt={card.title}
-              width={60}
-              height={60}
-              // className="transition group-hover:brightness-0 group-hover:invert"
-            />
-          </div>
- 
-          {/* Title */}
-          <h3 className=" text-base lg:text-[1.5rem] xl:text-[1.9rem] mt-3">{card.title}</h3>
- 
-          {/* Text */}
-          <p className=" text-sm md:text-base mt-2">{card.text}</p>
+      <div className="flex justify-center mt-10 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-4 max-w-[1200px] w-full place-items-center">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className={`group flex flex-col items-center text-center p-5 border
+            bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm sm:h-75 lg:h-80  xl:h-77`}
+            >
+              {/* Icon */}
+              <div className="h-20 flex items-center justify-center">
+                <Image
+                  src={card.img}
+                  alt={card.title}
+                  width={60}
+                  height={60}
+                // className="w-15 h-15"
+                />
+              </div>
+
+              {/* Title */}
+              <h3 className=" text-[1.6rem] sm:text-[1.86rem] md:text-[2.24rem] md:leading-10 lg:text-[1.5rem] lg:leading-8 xl:text-[2rem] xl:leading-10 leading-9 sm:mt-3">{card.title}</h3>
+
+              {/* Text */}
+              <p className=" text-[0.9rem] sm:text-[1rem] md:text-base my-2 sm:mt-3">{card.text}</p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
-  </div>
-</div>
   );
 };
- 
+
 export default Thirdpage;

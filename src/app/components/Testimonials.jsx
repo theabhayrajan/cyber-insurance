@@ -1,5 +1,6 @@
 import React from 'react';
 import { UsersIcon, ShieldCheckIcon } from '@heroicons/react/24/solid'; // heroicons icons
+import Marquee from 'react-fast-marquee';
 
 export default function Testimonials() {
   const testimonials = [
@@ -27,7 +28,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className=" py-16 mx-2 md:mx-6 lg:mx-7 xl:mx-5 2xl:mx-20">
+    <section className="py-16 mx-2 md:mx-6 lg:mx-7 xl:mx-5 2xl:mx-20">
       <div className="max-w-6xl mx-auto text-center px-4">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl text-black dark:text-white mb-6 lg:text-[4rem]">
@@ -57,27 +58,29 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105"
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+        {/* Testimonials Marquee */}
+        <div className="mt-20 overflow-hidden">
+          <Marquee pauseOnHover={false} gradient={false} speed={50}>
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 mx-5 w-full max-w-sm"
+              >
+                <div className="flex items-center mb-4">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  </div>
                 </div>
+                <p className="text-gray-700 italic">"{testimonial.quote}"</p>
               </div>
-              <p className="text-gray-700 italic">"{testimonial.quote}"</p>
-            </div>
-          ))}
+            ))}
+          </Marquee>
         </div>
       </div>
     </section>

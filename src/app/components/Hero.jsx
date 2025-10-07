@@ -37,26 +37,34 @@ const Hero = () => {
   }, [texts.length]);
 
   return (
-    <div className="bg-white dark:bg-black block 2xl:px-[7em] px-[1em]">
+    <div className="bg-white dark:bg-black block 2xl:px-[9em] px-[1em]">
 
       {/* Hero Section */}
-      <section className="w-full py-[7rem] md:py-[12rem] flex items-center justify-center overflow-x-hidden">
-        <div className="max-w-12xl w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-8">
+      <section className="w-full py-[3rem] mt-10 lg:py-[5rem] flex items-center justify-center overflow-x-hidden">
+        <div className="max-w-12xl w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 lg:gap-0">
 
           {/* LEFT TEXT */}
-          <div className="flex-1 lg:flex-[0_0_50%] space-y-4 sm:space-y-5 md:space-y-8
-                          pr-2 sm:pr-4 md:pr-4 lg:pr-10 max-w-full">
+          <div className="flex-1 lg:flex-[0_0_60%] space-y-4 sm:space-y-5 md:space-y-8
+                          pr-2 sm:pr-4 md:pr-4 lg:pr-10 max-w-full sm:mx-5 md:mx-10 lg:mx-8 2xl:mx-0">
 
 
 
             {/* Highlight heading */}
             <h1
               className="hero-heading relative
-              text-[2.8rem] md:text-[3.5rem] lg:text-[3.3rem] 2xl:text-[55px]
+              text-[1.9rem] md:text-[2.4rem] lg:text-[2.5rem] 2xl:text-[50px]
                         leading-[1] tracking-[-0.03em] text-black dark:text-white whitespace-nowrap max-[480px]:whitespace-normal break-words"
             >
 
-              With your Lexi Rating
+              With your
+              <span className="inline-flex items-center">
+                <img
+                  src="/cyber-insurance-white.svg"
+                  alt="LEXI Logo"
+                  className="h-6 mt-1 sm:h-7 md:h-8 lg:h-8 xl:h-8 2xl:h-10 ml-3 w-auto inline-block brightness-0 dark:brightness-100"
+                />
+                exi Rating
+              </span>
             </h1>
 
             {/* Animated Headline */}
@@ -71,10 +79,10 @@ const Hero = () => {
                   className="
                     hero-heading  
                     w-full
-                    text-[3rem] sm:text-[3.2rem] md:text-[3.5rem] lg:text-[3rem] 2xl:text-[3rem]
+                    text-[1.5rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[1.7rem] xl:text-[2.2rem] 2xl:text-[2.8rem]
                     leading-[1.1] md:leading-[1.1] lg:leading-[1.03]
                     tracking-[-0.02em]
-                    text-[#b01e1e]
+                    text-black dark:text-white
                     2xl:whitespace-normal 2xl:break-words mb-5
                   "
                 >
@@ -84,27 +92,97 @@ const Hero = () => {
             </div>
             {/* Description */}
 
-            <p className="text-[#52606d] dark:text-white text-[1em] lg:text-[1em] 2xl:text-[1.15em]
-                            leading-[1.5] w-full sm:w-[95%] lg:w-[100%] 2xl:w-[100%] md:w-[100%]" >
+            <p className="text-[#52606d] dark:text-white text-[0.8em] md:text-[1rem] lg:text-[0.9rem] 2xl:text-[1.15em]
+                            leading-[1.5] w-full sm:w-[95%] lg:w-[100%] 2xl:w-[75%] md:w-[100%]" >
               SMEs without a Lexi Rating™ may face higher premiums or outright denials.
               Before you apply for cyber insurance, know exactly how you’ll be judged.
-              Get your Lexi Rating now<br/> See what insurers see, before they do!
+              Get your Lexi Rating now<br /> See what insurers see, before they do!
             </p>
 
 
             {/* Button */}
-            <div className="flex flex-row whitespace-nowrap sm:-space-x-60 md:-space-x-80 lg:-space-x-10 xl:-space-x-30 2xl:-space-x-95 [@media(min-width:1536px)_and_(max-width:1850px)]:-space-x-45 [@media(min-width:400px)_and_(max-width:475px)]:-space-x-15 [@media(min-width:480px)_and_(max-width:635px)]:-space-x-35">
-              <ButtonSection />
-              <ButtonSection text="Continue" />
+            <div className="flex flex-col gap-2 xl:flex-row  whitespace-nowrap xl:gap-7">
+              {/* <ButtonSection />
+              <ButtonSection text="Continue" /> */}
+              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-16 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+                Create my Cyber Insurability Report
+              </button>
+              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-16 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+                Continue from where i left off
+              </button>
 
             </div>
           </div>
 
           {/* RIGHT VISUALS */}
-          <div className="w-full lg:w-[60%] relative mb-110 sm:mt-30 sm:mb-120 md:mt-30 md:mb-100 lg:mt-20 lg:mb-0 2xl:mb-20 flex-grow">
+          <div className="w-full lg:w-[40%] relative mt-7 lg:mt-0 lg:mb-10 2xl:mb-0 flex-grow">
             <HeroRightImages />
           </div>
 
+        </div>
+      </section>
+      <section className="mb-10">
+        <div className="max-w-9xl sm:max-w-lg md:max-w-170 lg:max-w-240 xl:max-w-350 2xl:max-w-500 mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 2xl:gap-10">
+
+            {/* Card 1 */}
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-12 sm:h-14 gap-3 text-center shadow-md hover:shadow-lg transition-shadow">
+              <img
+                src="/hero-img/Group.svg"
+                alt="Instant Report"
+                 className="h-5 w-5 md:w-6 md:h-6 2xl:w-7 2xl:h-7 dark:brightness-0"
+              />
+              <p className="text-xs text-[#d0d0d0] dark:text-black">Instant Report</p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-12 sm:h-14 gap-3 text-center shadow-md hover:shadow-lg transition-shadow">
+              <img
+                src="/hero-img/Group 176.svg"
+                alt="No Credit Card Needed"
+                className="h-5 w-5 md:w-6 md:h-6 2xl:w-7 2xl:h-7 dark:brightness-0"
+              />
+              <p className="text-xs text-[#d0d0d0] dark:text-black">No Credit Card Needed</p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow">
+              <img
+                src="/hero-img/Group 177.svg"
+                alt="Get Actionable Steps"
+                 className="h-6 w-6 2xl:w-7 2xl:h-7 dark:brightness-0"
+              />
+              <p className="text-xs text-[#d0d0d0] dark:text-black">
+                Get Actionable Steps To Improve Your Security
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow">
+              <img
+              src="/hero-img/Group (1).svg"
+               
+                alt="Discover Coverage"
+                 className="h-6 w-6 2xl:w-7 2xl:h-7 dark:brightness-0"
+              />
+              <p className="text-xs text-[#d0d0d0] dark:text-black">
+                Discover How Much Cyber Coverage You May Need
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center gap-2 py-2 h-12 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow">
+              <img
+                 src="/hero-img/Group 178.svg"
+                alt="Qualify For Cheaper Insurance"
+                 className="h-5 w-5 2xl:w-7 2xl:h-7 dark:brightness-0"
+              />
+              <p className="text-xs text-[#d0d0d0] dark:text-black">
+                Qualify For Cheaper Insurance
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 
