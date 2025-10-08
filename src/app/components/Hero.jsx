@@ -121,7 +121,7 @@ const Hero = () => {
 
         </div>
       </section>
-      <section className="mb-10">
+      <section className="pb-10">
         <div className="max-w-9xl sm:max-w-lg md:max-w-170 lg:max-w-240 xl:max-w-350 2xl:max-w-500 mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 2xl:gap-10">
 
