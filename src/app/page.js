@@ -10,7 +10,7 @@ import Thirdpage from "./components/Thirdpage";
 
 export default function Home() {
   return (
-   <main className="min-h-screen overflow-x-hidden  ">
+   <main className="min-h-screen overflow-x-hidden bg-white dark:bg-black">
       <Hero/>
       <Header />
       <Thirdpage />

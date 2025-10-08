@@ -52,7 +52,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white dark:bg-black transition-colors duration-500 z-100">
+    <header className="fixed top-0 left-0 w-full bg-white dark:bg-black transition-colors duration-500 z-100 ">
       <div className="h-18 flex items-center justify-between px-8 md:px-14 2xl:mx-20">
         {/* Logo */}
         <div className="flex items-center">

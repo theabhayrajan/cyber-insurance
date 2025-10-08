@@ -68,7 +68,7 @@ const Hero = () => {
             </h1>
 
             {/* Animated Headline */}
-            <div className="relative max-w-[1380px] mb-0">
+            <div className="relative max-w-[1380px] sm:h-full h-[9vh] ">
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={index}
