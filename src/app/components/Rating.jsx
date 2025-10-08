@@ -58,7 +58,7 @@ const Rating = () => {
                         <img
                             src="/cyber-insurance-white.svg"
                             alt="LEXI Logo"
-                            className="h-5 mb-1 sm:h-6 md:h-7.5 md:mb-2 lg:h-7.8 xl:h-8 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+                            className="h-5 mb-1 sm:h-6 md:h-7.5 md:mb-2 lg:h-7.8 xl:h-7.5 2xl:h-8.5 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
                         />
                         EXI Rating Mean?
                     </span>
@@ -80,18 +80,18 @@ const Rating = () => {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`group flex flex-col items-left text-left py-5 px-4 border
-          bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm h-55 sm:h-80 md:h-72 lg:h-70 xl:h-65
+                            className={`group flex flex-col items-left text-left p-5 border
+          bg-black dark:bg-white dark:text-black text-white rounded-lg w-full max-w-sm h-55 sm:h-80 md:h-72 lg:h-70 xl:h-60
           ${index === cards.length - 1 ? "lg:col-start-2" : ""}`}
                         >
                             <div className="flex flex-row gap-2">
-                                <h1 className=" text-[1.9rem] mt-1.5 sm:text-[2.1rem] md:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.7rem] ">
+                                <h1 className=" text-[1.9rem] mt-1.5 sm:text-[2.1rem] md:text-[2.2rem] lg:text-[2.2rem] xl:text-[2.4rem] 2xl:text-[2.5rem]">
                                     {card.rating}
                                 </h1>
                                 <h3
                                     className={`
-    text-[1.5rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[1.9rem] xl:text-[1.9rem]
-    xl:mt-6 mt-3
+    text-[1.5rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[1.9rem] xl:text-[1.7rem] xl:mt-4.5 2xl:text-[1.8rem]
+ mt-3
     ${index === cards.length - 1 ? "-translate-x-2" : ""}
   `}
                                 >
@@ -99,13 +99,13 @@ const Rating = () => {
                                 </h3>
                             </div>
 
-                            <p className=" text-[0.9rem] sm:text-[0.95rem] md:text-[1rem] lg:text-[0.95rem]  mt-2 mb-4">{card.text}</p>
+                            <p className=" text-[0.9rem] sm:text-[0.95rem] md:text-[1rem] lg:text-[0.95rem] xl:text-[1rem] mt-2 mb-4">{card.text}</p>
 
                             {/* Ye bottom me chipka rahega */}
                             <label className="flex flex-row mt-auto mb-3 gap-3 items-center cursor-pointer">
                                 <input type="radio" name="option" className="hidden peer" />
                                 <span className="w-4 h-4 rounded-full border-2 border-[#ffdba2] dark:border-black flex items-center justify-center peer-checked:bg-[#ffdba2] dark:peer-checked:bg-black"></span>
-                                <span className="text-[#ffdba2] dark:text-black text-[0.9rem] sm:text-[0.95rem] md:text-[0.9rem] lg:text-[0.82rem]">
+                                <span className="text-[#ffdba2] dark:text-black text-[0.9rem] sm:text-[0.95rem] md:text-[0.9rem] lg:text-[0.82rem] xl:text-[1rem]">
                                     {card.select}
                                 </span>
                             </label>

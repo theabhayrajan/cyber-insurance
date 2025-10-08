@@ -37,7 +37,7 @@ const Hero = () => {
   }, [texts.length]);
 
   return (
-    <div className="bg-white dark:bg-black block 2xl:px-[9em] px-[1em]">
+    <div className="bg-white dark:bg-black block mx-5 sm:mx-0 2xl:px-[9em] px-[1em]">
 
       {/* Hero Section */}
       <section className="w-full py-[3rem] mt-10 lg:py-[5rem] flex items-center justify-center overflow-x-hidden">
@@ -115,7 +115,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT VISUALS */}
-          <div className="w-full lg:w-[40%] relative mt-7 lg:mt-0 lg:mb-10 2xl:mb-0 flex-grow">
+          <div className="w-full lg:w-[40%] relative mt-7 lg:mr-5 2xl:mr-0 lg:mb-10 2xl:mb-0 flex-grow">
             <HeroRightImages />
           </div>
 

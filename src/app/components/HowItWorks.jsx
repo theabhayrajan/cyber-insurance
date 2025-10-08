@@ -60,17 +60,17 @@ export default function HowItWorks() {
     <div className="bg-white dark:bg-black w-full flex flex-col items-center py-12">
       <h2
         ref={headingRef}
-        className="text-4xl font-bold mb-10"
+         className="flex items-center justify-center gap-1 text-[2.2rem] sm:text-[2.4rem] md:text-[2.6rem] pt-3 lg:text-[2.7rem] 2xl:text-[2.8rem]"
       >
-        How it works
+        How It Works
       </h2>
 
-      <div className="flex flex-wrap w-[280px] justify-center gap-15 md:w-[780px] xl:max-w-8xl xl:w-auto">
+      <div className="flex flex-wrap w-[280px] justify-center gap-15 sm:w-[780px] xl:w-[1500px] 2xl:max-w-8xl">
         {steps.map((step, index) => (
           <div
             key={step.id}
             ref={(el) => (cardsRef.current[index] = el)}
-            className="relative group w-full sm:w-[300px] md:w-[260px] lg:w-[280px] flex-shrink-0"
+            className="relative group w-full sm:w-[250px] md:w-[260px] lg:w-[280px] xl:w-[250px] 2xl:w-[280px] flex-shrink-0"
           >
             <img
               src={step.bg}
@@ -81,12 +81,12 @@ export default function HowItWorks() {
 
             <div className="relative overflow-hidden rounded-3xl shadow-md clip-bottom">
               <div className="bg-white dark:bg-black border border-[#f4f4f4] dark:border-black rounded-2xl p-3 flex flex-col items-center text-center h-[400px] clip-bottom relative">
-                <div className="bg-black dark:bg-white border border-[#e6e6e6] rounded-2xl shadow-inner p-6 flex flex-col items-center text-center h-full clip-bottom relative">
+                <div className="bg-black dark:bg-white border border-[#e6e6e6] rounded-2xl shadow-inner px-3 py-6 flex flex-col items-center text-center h-full clip-bottom relative">
 
-                  <h3 className="lg:text-[1.8rem] leading-7 mb-1 mt-2 text-white dark:text-black">
+                  <h3 className="text-[1.7rem] lg:text-[1.8rem] 2xl:text-[2rem] leading-7 mb-1 mt-2 text-white dark:text-black">
                     {step.title}
                   </h3>
-                  <p className="text-base text-white dark:text-black mb-6 mt-5">
+                  <p className="text-[1.05rem] text-white dark:text-black mb-6 mt-5">
                     {step.desc}
                   </p>
 
@@ -105,7 +105,7 @@ export default function HowItWorks() {
 
       <button
         ref={buttonRef}
-        className="mt-12 text-xs md:text-base px-4 py-4 rounded-full bg-black dark:bg-white dark:text-black text-white flex items-center gap-2 shadow-lg text-center"
+       className="bg-black text-white dark:bg-white dark:text-black text-sm sm:text-base whitespace-nowrap rounded-full px-6 py-2 md:px-7 h-12 w-65 sm:h-13 sm:w-70 md:h-16 md:w-72 lg:px-0 2xl:h-14 2xl:text-base 2xl:w-75 mt-10 text-center"
       >
         Create My Cyber Insurability Report
       </button>

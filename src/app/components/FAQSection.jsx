@@ -69,7 +69,7 @@ export default function FAQSection() {
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-2">
+      <div className="space-y-2  mx-2.5 sm:mx-5 md:mx-10 lg:mx-0">
         {visibleFaqs.map((item, index) => {
           const isOpen = openIndex === index;
           return (

@@ -10,7 +10,6 @@ export default function Header() {
 
   // --- Theme toggle logic ---
   useEffect(() => {
-    // Load saved theme or system preference
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
       setTheme(storedTheme);
@@ -65,26 +64,24 @@ export default function Header() {
           <a
             href="#products"
             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
-          
           >
             Our Vision
           </a>
           <a
             href="#products"
-             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
           >
             For Insurers
           </a>
           <a
             href="#products"
-           className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
           >
             Become a Cybersecurity Partner
           </a>
-        
           <a
             href="#products"
-           className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-violet-600 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
           >
             Contact us
           </a>
@@ -94,30 +91,37 @@ export default function Header() {
             onClick={toggleTheme}
             className="relative overflow-hidden bg-black dark:bg-white text-white dark:text-black font-medium px-6 rounded-4xl h-8 flex items-center justify-center transition-colors duration-300"
           >
-            {theme === "light" ? (
-              <Moon className="w-4 h-4" />
-            ) : (
-              <Sun className="w-4 h-4" />
-            )}
+            {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
           </button>
         </div>
 
-        {/* Hamburger */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden flex flex-col justify-center items-center space-y-1.5 w-8 h-8 focus:outline-none"
-        >
-          <span
-            className={`block h-[2px] w-6 bg-black dark:bg-white transition-transform duration-300 ${
-              menuOpen ? "rotate-45 translate-y-1" : ""
-            }`}
-          ></span>
-          <span
-            className={`block h-[2px] w-6 bg-black dark:bg-white transition-transform duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-1" : ""
-            }`}
-          ></span>
-        </button>
+        {/* Right Side (Mobile): Theme toggle + Hamburger */}
+        <div className="lg:hidden flex items-center space-x-4">
+          {/* Theme Toggle Button (mobile position) */}
+          <button
+            onClick={toggleTheme}
+            className="relative overflow-hidden bg-black dark:bg-white text-white dark:text-black font-medium px-3 rounded-4xl h-5 flex items-center justify-center transition-colors duration-300"
+          >
+            {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+          </button>
+
+          {/* Hamburger */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="flex flex-col justify-center items-center space-y-1.5 w-8 h-8 focus:outline-none"
+          >
+            <span
+              className={`block h-[2px] w-6 bg-black dark:bg-white transition-transform duration-300 ${
+                menuOpen ? "rotate-45 translate-y-1" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-[2px] w-6 bg-black dark:bg-white transition-transform duration-300 ${
+                menuOpen ? "-rotate-45 -translate-y-1" : ""
+              }`}
+            ></span>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Drawer */}
@@ -146,7 +150,6 @@ export default function Header() {
         >
           Become a Cybersecurity Partner
         </a>
-       
         <a
           href="#"
           onClick={() => setMenuOpen(false)}
@@ -154,21 +157,6 @@ export default function Header() {
         >
           Contact us
         </a>
-
-        {/* Theme Toggle in Mobile Drawer */}
-        <button
-          onClick={() => {
-            toggleTheme();
-            setMenuOpen(false);
-          }}
-          className="bg-black dark:bg-white text-white dark:text-black font-medium px-6 py-2 rounded-full w-full flex items-center justify-center transition-colors duration-300"
-        >
-          {theme === "light" ? (
-            <Moon className="w-5 h-5" />
-          ) : (
-            <Sun className="w-5 h-5" />
-          )}
-        </button>
       </div>
     </header>
   );

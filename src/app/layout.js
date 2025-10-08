@@ -11,13 +11,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <body className="antialiased">
-      <ClientLayout>
+      {/* <ClientLayout> */}
         <LenisProvider>
         {children}
         
         </LenisProvider>
       
-      </ClientLayout>
+      {/* </ClientLayout> */}
      
     </body>
     </html>

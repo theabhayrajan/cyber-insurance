@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CtaSection() {
   return (
-    <section className="relative bg-[#1f2932] dark:bg-[#d6dde4] sm:h-110 py-24 overflow-hidden mx-2 lg:mx-7 2xl:mx-28 rounded-3xl">
+    <section className="relative bg-[#1f2932] dark:bg-[#d6dde4] h-100 flex items-center sm:h-110 py-24 overflow-hidden mx-5 sm:mx-7 md:mx-12 lg:mx-14 2xl:mx-32 rounded-3xl">
       {/* Circles background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         {/* Biggest circle */}
@@ -28,7 +28,7 @@ export default function CtaSection() {
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
-              className="h-5 sm:h-6 md:h-7 lg:h-10 xl:h-9 xl:mt-2 ml-3 w-auto inline-block dark:brightness-0"
+              className="h-6.5 mt-1 sm:h-7.5 sm:mt-1.5 md:h-8 md:mt-2.5 lg:h-8.5 xl:h-10 xl:mt-2 ml-3 w-auto inline-block dark:brightness-0"
             />
              EXI Rating Today
           </span>
@@ -42,10 +42,10 @@ export default function CtaSection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 mt-5 lg:mt-5 2xl:mt-7 whitespace-nowrap">
-            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7 h-15 md:h-16">
+            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7 h-14 w-72 text-center md:h-16 self-center">
               Create My Cyber Insurability Report
             </button>
-            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7 h-15 md:h-16">
+            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7  h-14 w-72 text-center md:h-16 self-center">
               Continue From Where I Left Off
             </button>
           </div>
