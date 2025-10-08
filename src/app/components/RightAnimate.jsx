@@ -1,32 +1,42 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
- 
+
 const HeroRightImages = () => {
   const imageRef = useRef(null);
- 
-  const images = ["/hero-img/r2.png", "/hero-img/r1.png","/hero-img/r3.png","/hero-img/r4.png"]; // 👈 Use your two images here
+
+  const images = [
+    "/hero-img/r2.png",
+    "/hero-img/r1.png",
+    "/hero-img/r3.png",
+    "/hero-img/r4.png",
+  ];
+
   const [currentImage, setCurrentImage] = useState(0);
- 
-  // Fade-in animation for image change
-  useEffect(() => {
-    if (imageRef.current) {
-      gsap.fromTo(
-        imageRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 0.8, ease: "power2.out" }
-      );
-    }
-  }, [currentImage]);
- 
-  // Image rotation every 4 seconds
+
+  // Smooth fade transition between images
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
+      if (imageRef.current) {
+        gsap.to(imageRef.current, {
+          opacity: 0,
+          duration: 0.4, // faster fade-out
+          ease: "power2.inOut",
+          onComplete: () => {
+            setCurrentImage((prev) => (prev + 1) % images.length);
+            gsap.to(imageRef.current, {
+              opacity: 1,
+              duration: 0.4, // smooth fade-in
+              ease: "power2.inOut",
+            });
+          },
+        });
+      }
+    }, 4000);
+
     return () => clearInterval(interval);
   }, []);
- 
+
   return (
     <div
       className="
@@ -53,9 +63,9 @@ const HeroRightImages = () => {
           transform-gpu
           md:mx-auto
         "
+        style={{ opacity: 1 }}
       >
         <img
-          key={currentImage}
           src={images[currentImage]}
           alt="Cyber Insurability"
           className="
@@ -72,6 +82,5 @@ const HeroRightImages = () => {
     </div>
   );
 };
- 
+
 export default HeroRightImages;
- 
