@@ -47,11 +47,11 @@ const Rating = () => {
     ];
 
     return (
-        <div className="bg-white dark:bg-black py-10 px-4 sm:px-8 md:px-12">
+        <div className="bg-white dark:bg-black py-10 mx-8 sm:mx-7.5 md:mx-14">
             {/* Heading */}
             <div className="text-center">
                 <h1
-                    className="flex items-center justify-center gap-1 text-[1.5rem] sm:text-[1.9rem] md:text-[2.5rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.8rem]"
+                    className="flex items-center justify-center gap-1 text-[1.4rem] sm:text-[1.9rem] md:text-[2.5rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.8rem]"
                 >
                     What Does
                     <span className="">
@@ -81,7 +81,7 @@ const Rating = () => {
                         <div
                             key={index}
                             className={`group flex flex-col items-left text-left p-5 border
-          bg-black dark:bg-white dark:text-black text-white rounded-lg w-full max-w-sm h-55 sm:h-80 md:h-72 lg:h-70 xl:h-60
+          bg-black dark:bg-white dark:text-black text-white rounded-lg w-full max-w-sm h-60 sm:h-72 md:h-72 lg:h-70 xl:h-60
           ${index === cards.length - 1 ? "lg:col-start-2" : ""}`}
                         >
                             <div className="flex flex-row gap-2">
@@ -105,7 +105,7 @@ const Rating = () => {
                             <label className="flex flex-row mt-auto mb-3 gap-3 items-center cursor-pointer">
                                 <input type="radio" name="option" className="hidden peer" />
                                 <span className="w-4 h-4 rounded-full border-2 border-[#ffdba2] dark:border-black flex items-center justify-center peer-checked:bg-[#ffdba2] dark:peer-checked:bg-black"></span>
-                                <span className="text-[#ffdba2] dark:text-black text-[0.9rem] sm:text-[0.95rem] md:text-[0.9rem] lg:text-[0.82rem] xl:text-[1rem]">
+                                <span className="text-[#ffdba2] dark:text-black text-[0.9rem] sm:text-[0.74rem] md:text-[0.87rem] lg:text-[0.77rem] xl:text-[1rem]">
                                     {card.select}
                                 </span>
                             </label>

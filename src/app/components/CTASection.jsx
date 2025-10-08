@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CtaSection() {
   return (
-    <section className="relative bg-[#1f2932] dark:bg-[#d6dde4] h-100 flex items-center sm:h-110 py-24 overflow-hidden mx-5 sm:mx-7 md:mx-12 lg:mx-14 2xl:mx-32 rounded-3xl">
+    <section className="relative bg-[#1f2932] dark:bg-[#d6dde4] h-100 flex items-center sm:h-110 py-24 overflow-hidden mx-5 sm:mx-7 md:mx-12 lg:mx-14 2xl:mx-33 rounded-3xl">
       {/* Circles background */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         {/* Biggest circle */}

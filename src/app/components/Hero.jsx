@@ -37,7 +37,7 @@ const Hero = () => {
   }, [texts.length]);
 
   return (
-    <div className="bg-white dark:bg-black block px-7 sm:mx-0 2xl:px-[9em]">
+    <div className="bg-white dark:bg-black block mx-8 sm:mx-0 lg:mx-5 2xl:mx-33">
 
       {/* Hero Section */}
       <section className="w-full py-[3rem] mt-10 lg:py-[5rem] flex items-center justify-center overflow-x-hidden">
@@ -45,7 +45,7 @@ const Hero = () => {
 
           {/* LEFT TEXT */}
           <div className="flex-1 lg:flex-[0_0_60%] space-y-4 sm:space-y-5 md:space-y-8
-                          pr-2 sm:pr-4 md:pr-4 lg:pr-10 max-w-full sm:mx-5 md:mx-10 lg:mx-8 2xl:mx-0">
+                          pr-2 sm:pr-4 md:pr-4 lg:pr-10 max-w-full sm:mx-8.5 md:mx-14 lg:mx-8 2xl:mx-0">
 
 
 
@@ -101,13 +101,13 @@ const Hero = () => {
 
 
             {/* Button */}
-            <div className="flex flex-col gap-2 xl:flex-row  whitespace-nowrap xl:gap-7">
+            <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 xl:flex-row  whitespace-nowrap xl:gap-7">
               {/* <ButtonSection />
               <ButtonSection text="Continue" /> */}
-              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-16 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Create my Cyber Insurability Report
               </button>
-              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-16 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Continue from where i left off
               </button>
 
@@ -122,7 +122,7 @@ const Hero = () => {
         </div>
       </section>
       <section className="pb-10">
-        <div className="max-w-9xl sm:max-w-lg md:max-w-170 lg:max-w-240 xl:max-w-350 2xl:max-w-500 mx-auto px-4">
+        <div className="max-w-9xl sm:max-w-lg md:max-w-170 lg:max-w-235 xl:max-w-300 2xl:max-w-600 mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 2xl:gap-10">
 
             {/* Card 1 */}
@@ -146,7 +146,7 @@ const Hero = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow gap-1 lg:gap-1.5">
               <img
                 src="/hero-img/Group 177.svg"
                 alt="Get Actionable Steps"
@@ -158,7 +158,7 @@ const Hero = () => {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-[#434343] dark:bg-white text-white  rounded-lg flex flex-row items-center justify-center px-10  py-2 h-13 sm:h-14 text-center shadow-md hover:shadow-lg gap-1 transition-shadow lg:gap-2">
               <img
               src="/hero-img/Group (1).svg"
                

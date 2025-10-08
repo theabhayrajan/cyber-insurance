@@ -60,7 +60,7 @@ const Thirdpage = () => {
   ];
 
   return (
-    <div className="bg-white dark:bg-black py-0 px-4 sm:px-8 md:px-12">
+    <div className="bg-white dark:bg-black mx-8 sm:mx-7.5 md:mx-14">
       {/* Heading */}
       <div className="text-center">
         <h1
@@ -125,7 +125,7 @@ const Thirdpage = () => {
               </div>
 
               {/* Title */}
-              <h3 className=" text-[1.6rem] sm:text-[1.86rem] md:text-[2.24rem] md:leading-10 lg:text-[1.5rem] lg:leading-8 xl:text-[2rem] xl:leading-10 leading-9 sm:mt-3">{card.title}</h3>
+              <h3 className=" text-[1.5rem] sm:text-[1.86rem] md:text-[1.8rem] md:leading-8 lg:text-[1.5rem] lg:leading-7 xl:text-[2rem] xl:leading-10 leading-9 sm:mt-3">{card.title}</h3>
 
               {/* Text */}
               <p className=" text-[0.9rem] sm:text-[1rem] md:text-base my-2 sm:mt-3">{card.text}</p>

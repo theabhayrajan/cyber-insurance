@@ -65,11 +65,11 @@ export default function FAQSection() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
-      <h2 className="text-3xl text-center mb-8 font-semibold lg:text-[3.7rem]">
+      <h2 className="text-3xl text-center mb-8 font-semibold lg:text-[3rem]">
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-2  mx-2.5 sm:mx-5 md:mx-10 lg:mx-0">
+      <div className="space-y-2  mx-4 sm:mx-5 md:mx-10 lg:mx-0">
         {visibleFaqs.map((item, index) => {
           const isOpen = openIndex === index;
           return (
