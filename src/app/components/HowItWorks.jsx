@@ -60,7 +60,7 @@ export default function HowItWorks() {
     <div className="bg-white dark:bg-black w-full flex flex-col items-center py-12">
       <h2
         ref={headingRef}
-         className="flex items-center justify-center gap-1 text-[2.2rem] sm:text-[2.4rem] md:text-[2.6rem] pt-3 lg:text-[2.7rem] 2xl:text-[2.8rem]"
+         className="flex items-center justify-center gap-1 text-[2.2rem] sm:text-[2.4rem] md:text-[2.6rem] pt-3 lg:text-[2.8rem] 2xl:text-[2.8rem]"
       >
         How It Works
       </h2>

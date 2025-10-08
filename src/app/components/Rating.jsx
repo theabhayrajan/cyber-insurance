@@ -58,7 +58,7 @@ const Rating = () => {
                         <img
                             src="/cyber-insurance-white.svg"
                             alt="LEXI Logo"
-                            className="h-5 mb-1 sm:h-6 md:h-7.5 md:mb-2 lg:h-7.8 xl:h-7.5 2xl:h-8.5 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+                            className="h-4.5 mb-1 sm:h-5.5 md:h-7.5 md:mb-2 lg:h-7.8 xl:h-7.5 2xl:h-8.5 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
                         />
                         EXI Rating Mean?
                     </span>

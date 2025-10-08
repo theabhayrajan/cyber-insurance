@@ -20,7 +20,7 @@ export default function CtaSection() {
           {/* Heading */}
           <h1
             className="relative text-[2.1rem] sm:text-[2.5rem] md:text-[2.7rem] lg:text-[2.8rem] xl:text-[3rem] 
-            2xl:text-[3.3rem] leading-[1] tracking-[-0.03em] text-white dark:text-black"
+            2xl:text-[3.3rem] leading-[1.2] tracking-[-0.03em] text-white dark:text-black"
           >
             
                               Get Your Free 

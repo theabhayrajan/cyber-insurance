@@ -71,7 +71,7 @@ const Thirdpage = () => {
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
-              className="h-6 mt-1 sm:h-6 md:h-7 lg:h-8 xl:h-8 2xl:h-8.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+              className="h-5.5 mt-1 sm:h-5.5 md:h-7 lg:h-7.5 lg:mt-1.5 xl:h-7.5 2xl:h-8.5 2xl:mt-1.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />
             EXI Rating
           </span>
@@ -86,7 +86,7 @@ const Thirdpage = () => {
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
-              className="h-3 mb-0.5 sm:h-3.5 sm:mb-1 md:h-4 lg:h-4 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+              className="h-2.5 mb-0.5 sm:h-3 sm:mb-1 md:h-3.5 lg:h-3.5 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />
             EXI Rating is the world's first cyber insurability rating built
           specifically for micro and small businesses.
@@ -98,7 +98,7 @@ const Thirdpage = () => {
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
-              className="h-3 mb-0.5 sm:h-3.5 md:h-4 lg:h-4 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+              className="h-3 mb-0.5 sm:h-3 md:h-3.5 md:mb-1 lg:h-3.5 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />EXI Rating provides you with:
              </span>
         </p>
