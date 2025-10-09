@@ -52,7 +52,7 @@ const Hero = () => {
             {/* Highlight heading */}
             <h1
               className="hero-heading relative
-              text-[1.9rem] md:text-[2.4rem] lg:text-[2.5rem] 2xl:text-[50px]
+              text-[1.9rem] md:text-[2.4rem] lg:text-[2.5rem] 2xl:text-[44px]
                         leading-[1] tracking-[-0.03em] text-black dark:text-white whitespace-nowrap max-[480px]:whitespace-normal break-words"
             >
 
@@ -61,7 +61,7 @@ const Hero = () => {
                 <img
                   src="/cyber-insurance-white.svg"
                   alt="LEXI Logo"
-                  className="h-6 mt-1 sm:h-7 md:h-8 lg:h-8 xl:h-8 2xl:h-10 ml-3 w-auto inline-block brightness-0 dark:brightness-100"
+                  className="h-6 mt-1 sm:h-7 md:h-8 lg:h-8 xl:h-8 2xl:h-8.5 ml-3 w-auto inline-block brightness-0 dark:brightness-100"
                 />
                 exi Rating
               </span>
@@ -79,7 +79,7 @@ const Hero = () => {
                   className="
                     hero-heading  
                     w-full
-                    text-[1.5rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[1.7rem] xl:text-[2.2rem] 2xl:text-[2.8rem]
+                    text-[1.5rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[1.7rem] xl:text-[2.2rem] 2xl:text-[2.2rem]
                     leading-[1.1] md:leading-[1.1] lg:leading-[1.03]
                     tracking-[-0.02em]
                     text-black dark:text-white
@@ -92,7 +92,7 @@ const Hero = () => {
             </div>
             {/* Description */}
 
-            <p className="text-[#52606d] dark:text-white text-[0.8em] md:text-[1rem] lg:text-[0.9rem] 2xl:text-[1.15em]
+            <p className="text-[#52606d] dark:text-white text-[0.8em] md:text-[1rem] lg:text-[0.9rem] 2xl:text-[1.1rem]
                             leading-[1.5] w-full sm:w-[95%] lg:w-[100%] 2xl:w-[75%] md:w-[100%]" >
               SMEs without a Lexi Rating™ may face higher premiums or outright denials.
               Before you apply for cyber insurance, know exactly how you’ll be judged.
@@ -101,7 +101,7 @@ const Hero = () => {
 
 
             {/* Button */}
-            <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 xl:flex-row  whitespace-nowrap xl:gap-7">
+            <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 xl:flex-row  whitespace-nowrap xl:gap-5">
               {/* <ButtonSection />
               <ButtonSection text="Continue" /> */}
               <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">

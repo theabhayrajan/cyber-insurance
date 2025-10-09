@@ -64,23 +64,23 @@ const Thirdpage = () => {
       {/* Heading */}
       <div className="text-center">
         <h1
-          className="flex items-center justify-center gap-1 text-[1.9rem] sm:text-[1.9rem] md:text-[2.4rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.8rem]"
+          className="flex items-center justify-center gap-1 text-[1.9rem] sm:text-[1.9rem] md:text-[2.4rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.7rem]"
         >
           Meet
           <span className="inline-flex items-center">
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
-              className="h-5.5 mt-1 sm:h-5.5 md:h-7 lg:h-7.5 lg:mt-1.5 xl:h-7.5 2xl:h-8.5 2xl:mt-1.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
+              className="h-5.5 mt-1 sm:h-5.5 md:h-7 lg:h-7.5 lg:mt-1.5 xl:h-7.5 2xl:h-8 2xl:mt-1.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />
             EXI Rating
           </span>
         </h1>
 
-        <h1 className="text-[1.4rem] sm:[1.9rem] md:text-[2rem] mt-2 lg:text-[2.1rem] 2xl:text-[2.5rem] mb-5 leading-7 md:leading-9">
+        <h1 className="text-[1.4rem] sm:[1.9rem] md:text-[2rem] mt-2 lg:text-[2.1rem] 2xl:text-[2.5 rem] mb-5 leading-7 md:leading-9">
           The Cyber Insurability Rating designed for Small Businesses
         </h1>
-        <p className="text-[0.8rem] leading-5 sm:text-[1rem] md:text-lg lg:text-[1.2rem] font-medium sm:leading-5 md:leading-7 lg:leading-8 2xl:leading-10 lg:px-5 xl:px-35 2xl:px-67">
+        <p className="text-[0.8rem] leading-5 sm:text-[1rem] md:text-lg lg:text-[1.2rem] 2xl:text-[1.19rem] font-medium sm:leading-5 md:leading-7 lg:leading-8 2xl:leading-10 lg:px-5 xl:px-35 2xl:px-67">
       
           <span className="">
             <img
