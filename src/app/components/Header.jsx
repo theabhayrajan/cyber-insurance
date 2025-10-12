@@ -62,25 +62,31 @@ export default function Header() {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center space-x-7 text-gray-700 dark:text-gray-200">
           <a
-            href="#products"
+            href="#"
             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-black transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Our Vision
           </a>
           <a
-            href="#products"
+            href="#"
             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-black transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             For Insurers
           </a>
           <a
-            href="#products"
+            href="#"
             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-black transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Become a Cybersecurity Partner
           </a>
+           <a
+            href="#"
+            className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-black transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+          >
+            FAQs
+          </a>
           <a
-            href="#products"
+            href="#"
             className="relative text-black dark:text-white whitespace-nowrap font-medium hover:text-black transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black dark:after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Contact us
@@ -149,6 +155,13 @@ export default function Header() {
           className="font-medium text-base w-full hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
         >
           Become a Cybersecurity Partner
+        </a>
+         <a
+          href="#"
+          onClick={() => setMenuOpen(false)}
+          className="font-medium text-base w-full hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
+        >
+          FAQs
         </a>
         <a
           href="#"

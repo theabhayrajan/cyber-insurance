@@ -20,18 +20,18 @@ export default function CtaSection() {
           {/* Heading */}
           <h1
             className="relative text-[2.1rem] sm:text-[2.5rem] md:text-[2.7rem] lg:text-[2.8rem] xl:text-[3rem] 
-            2xl:text-[3.3rem] leading-[1.2] tracking-[-0.03em] text-white dark:text-black"
+            2xl:text-[3rem] leading-[1.2] tracking-[-0.03em] text-white dark:text-black"
           >
             
-                              Get Your Free 
-          <span className="inline-flex items-center">
+                              Get Your Free LEXI Rating Today 
+          {/* <span className="inline-flex items-center">
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
               className="h-6.5 mt-1 sm:h-7.5 sm:mt-1.5 md:h-8 md:mt-2.5 lg:h-8.5 xl:h-10 xl:mt-2 ml-3 w-auto inline-block dark:brightness-0"
             />
              EXI Rating Today
-          </span>
+          </span> */}
           </h1>
 
           {/* Subheading */}
@@ -42,10 +42,10 @@ export default function CtaSection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-3 mt-5 lg:mt-5 2xl:mt-7 whitespace-nowrap">
-            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7 h-14 w-72 text-center md:h-16 self-center">
+            <button className="bg-[#cc621c] text-black hover:bg-[#FF7A00] hover:cursor-pointer rounded-full px-6 py-2 md:px-7 h-12 w-70 sm:h-14 text-center md:h-16 self-center">
               Create My Cyber Insurability Report
             </button>
-            <button className="bg-white text-black dark:bg-black dark:text-white rounded-full px-6 py-2 md:px-7  h-14 w-72 text-center md:h-16 self-center">
+            <button className="bg-[#cc621c] text-black hover:bg-[#ff7b25] hover:cursor-pointer rounded-full px-6 py-2 md:px-7  h-12 w-70 sm:h-14 text-center md:h-16 self-center">
               Continue From Where I Left Off
             </button>
           </div>

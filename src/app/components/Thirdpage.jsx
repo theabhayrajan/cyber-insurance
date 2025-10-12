@@ -53,7 +53,7 @@ const Thirdpage = () => {
     },
     {
       img: "/Shield.svg",
-      title: "Tailored Cyber Security Recommendations",
+      title: "Personalized Security Recommendations",
       text: "Actionable steps to improve your security posture and rating.",
       bg: "bg-yellow-50",
     },
@@ -66,15 +66,15 @@ const Thirdpage = () => {
         <h1
           className="flex items-center justify-center gap-1 text-[1.9rem] sm:text-[1.9rem] md:text-[2.4rem] pt-3 lg:text-[2.5rem] 2xl:text-[2.7rem]"
         >
-          Meet
-          <span className="inline-flex items-center">
+          Meet LEXI Rating
+          {/* <span className="inline-flex items-center">
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
               className="h-5.5 mt-1 sm:h-5.5 md:h-7 lg:h-7.5 lg:mt-1.5 xl:h-7.5 2xl:h-8 2xl:mt-1.5 xl:mt-2 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />
             EXI Rating
-          </span>
+          </span> */}
         </h1>
 
         <h1 className="text-[1.4rem] sm:[1.9rem] md:text-[2rem] mt-2 lg:text-[2.1rem] 2xl:text-[2.5 rem] mb-5 leading-7 md:leading-9">
@@ -82,25 +82,26 @@ const Thirdpage = () => {
         </h1>
         <p className="text-[0.8rem] leading-5 sm:text-[1rem] md:text-lg lg:text-[1.2rem] 2xl:text-[1.19rem] font-medium sm:leading-5 md:leading-7 lg:leading-8 2xl:leading-10 lg:px-5 xl:px-35 2xl:px-67">
       
-          <span className="">
-            <img
+          {/* <span className=""> */}
+            {/* <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
               className="h-2.5 mb-0.5 sm:h-3 sm:mb-1 md:h-3.5 lg:h-3.5 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
-            />
-            EXI Rating is the world's first cyber insurability rating built
+            /> */}
+            LEXI Rating is the world's first cyber insurability rating built
           specifically for micro and small businesses.
           It's like a credit rating - but for cyber insurability.
-          </span>
+          {/* </span> */}
         </p>
         <p className="text-[0.9rem] sm:text-[1rem] mt-5 sm:text-base md:text-lg lg:text-[1.2rem] font-medium">
-          Your <span className="">
+          {/* Your <span className="">
             <img
               src="/cyber-insurance-white.svg"
               alt="LEXI Logo"
               className="h-3 mb-0.5 sm:h-3 md:h-3.5 md:mb-1 lg:h-3.5 xl:h-4 xl:mb-1 ml-1 w-auto inline-block brightness-0 dark:brightness-100"
             />EXI Rating provides you with:
-             </span>
+             </span> */}
+             Your Lexi Rating provides you with:
         </p>
       </div>
 
@@ -111,7 +112,7 @@ const Thirdpage = () => {
             <div
               key={index}
               className={`group flex flex-col items-center text-center p-5 border
-            bg-black dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm sm:h-75 lg:h-80  xl:h-77`}
+            bg-[#434343] dark:bg-white dark:text-black text-white rounded-xl w-full max-w-sm sm:h-75 lg:h-80  xl:h-77`}
             >
               {/* Icon */}
               <div className="h-20 flex items-center justify-center">

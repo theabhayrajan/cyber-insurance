@@ -65,7 +65,7 @@ export default function FAQSection() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
-      <h2 className="text-3xl sm:text-[2.2rem] md:text-[2.5rem] text-center mb-8 lg:text-[3rem]">
+      <h2 className="text-3xl sm:text-[2.2rem] md:text-[2.5rem] text-center mb-8 font-semibold lg:text-[3rem]">
         Frequently Asked Questions
       </h2>
 
@@ -75,10 +75,10 @@ export default function FAQSection() {
           return (
             <div
               key={index}
-              className={`border border-black rounded overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`border border-[#434343] rounded overflow-hidden transition-all duration-500 ease-in-out ${
                 isOpen
-                  ? " bg-black dark:bg-white dark:text-black dark:border-white text-white shadow-lg"
-                  : "bg-white dark:bg-black dark:text-white dark:border-white text-black hover:bg-black hover:text-white hover:shadow-md"
+                  ? " bg-[#434343] dark:bg-white dark:text-black dark:border-white text-white shadow-lg"
+                  : "bg-white dark:bg-[#434343] dark:text-white dark:border-white text-black hover:bg-[#434343] hover:text-white hover:shadow-md"
               }`}
             >
               <button
@@ -113,7 +113,7 @@ export default function FAQSection() {
                     : '0px'
                 }}
               >
-                <div className={`px-11 py-4 text-sm bg-white dark:bg-black dark:text-white text-black transform transition-all duration-500 ${
+                <div className={`px-11 py-4 text-sm bg-white dark:bg-[#434343] dark:text-white text-black transform transition-all duration-500 ${
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
                 }`}>
                   {item.answer}

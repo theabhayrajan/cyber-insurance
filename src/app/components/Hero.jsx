@@ -56,15 +56,15 @@ const Hero = () => {
                         leading-[1] tracking-[-0.03em] text-black dark:text-white whitespace-nowrap max-[480px]:whitespace-normal break-words"
             >
 
-              With your
-              <span className="inline-flex items-center">
+              With your Lexi Rating
+              {/* <span className="inline-flex items-center">
                 <img
                   src="/cyber-insurance-white.svg"
                   alt="LEXI Logo"
                   className="h-6 mt-1 sm:h-7 md:h-8 lg:h-8 xl:h-8 2xl:h-8.5 ml-3 w-auto inline-block brightness-0 dark:brightness-100"
-                />
-                exi Rating
-              </span>
+                /> */}
+                
+              {/* </span> */}
             </h1>
 
             {/* Animated Headline */}
@@ -104,10 +104,10 @@ const Hero = () => {
             <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 xl:flex-row  whitespace-nowrap xl:gap-5">
               {/* <ButtonSection />
               <ButtonSection text="Continue" /> */}
-              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Create my Cyber Insurability Report
               </button>
-              <button className="bg-black text-white dark:bg-white dark:text-black text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Continue from where i left off
               </button>
 
