@@ -101,13 +101,13 @@ const Hero = () => {
 
 
             {/* Button */}
-            <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 xl:flex-row  whitespace-nowrap xl:gap-5">
+            <div className="flex flex-col gap-2 md:gap-4 lg:gap-2 lg:flex-row  whitespace-nowrap xl:gap-5">
               {/* <ButtonSection />
               <ButtonSection text="Continue" /> */}
-              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-63 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Create my Cyber Insurability Report
               </button>
-              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-65 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
+              <button className="bg-[#cc621c] text-white hover:bg-[#ff7b25] hover:cursor-pointer text-sm rounded-full px-6 py-2 md:px-7 h-10 w-65 md:h-15 lg:h-12 lg:px-0 lg:w-55 lg:text-sm 2xl:h-16 2xl:text-base 2xl:w-75">
                 Continue from where i left off
               </button>
 
